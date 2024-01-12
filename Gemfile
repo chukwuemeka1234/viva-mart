@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.1"
+ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.7"
@@ -21,8 +21,18 @@ gem "importmap-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
+gem 'sass-rails', '~> 6.0'
+
+gem 'uglifier', '~> 4.2'
+
+gem 'webpacker', '~> 5.4', '>= 5.4.4'
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
+
+gem 'coffee-rails', '~> 5.0'
+
+gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -41,6 +51,15 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+
+gem 'bulma-rails', '~> 0.9.4'
+gem 'simple_form', '~> 5.3'
+gem 'devise', '~> 4.9', '>= 4.9.3'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'jquery-rails', '~> 4.6'
+gem 'wysiwyg-rails', '~> 4.1', '>= 4.1.4'
+gem 'public_activity', '~> 2.0', '>= 2.0.2'
+gem 'figaro', '~> 1.2'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
